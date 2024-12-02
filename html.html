@@ -2,35 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Мультиязична сторінка</title>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <select name="" id="select">
-                <option value="ua">UA</option>
-                <option value="en">EN</option>
-                <option value="nd">ND</option>
+    <form action="#" method="post" enctype="multipart/form-data" id="form">
+        <h2>Create form</h2>
+        <div class="form-box">
+            <input type="text" id="name" name="name" placeholder="user name">
+        </div>
+        <div class="form-box">
+            <input type="email" id="email" name="email" placeholder="enter email">
+        </div>
+        <div class="form-box">
+            <input type="password" id="password" name="password" placeholder="enter password">
+            <button id="togglePassword1">👁️</button>
+        </div>
+        <div class="form-box">
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="confirm password">
+            <button id="togglePassword2">👁️</button>
+        </div>
+        <div class="form-box">
+            <input type="tel" id="tel" name="tel" placeholder="enter ur phone number">
+        </div>
+        <div class="form-box">
+            <select name="gender" id="gender">
+                <option value="" disabled>Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
             </select>
         </div>
-        <h1 class="lang-title">Мультиязична сторінка</h1>
-        <div class="main">
-            <img src="img/387424628.webp" class="img" alt="">
-            <div class="information">
-                <ul>
-                    <li class="lang-name">Ноутбук Lenovo IdeaPad</li>
-                    <li class="lang-os">Операційна система</li>
-                    <li class="lang-memory">Об'єм пам'яті</li>
-                    <li class="lang-type">Тип пам'яті</li>
-                    <li class="lang-color">Колір</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <script src="lang.js"></script>
-    <script src="app.js"></script>
+        <button type="button" id="showPass">Show/hide password</button>
+        <button type="submit" id="button" class="btn">Send form</button>
+    </form>
+<script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
